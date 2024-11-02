@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<TextView
+    android:id="@+id/TV_ML"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="40dp"
+    app:layout_constraintStart_toStartOf="@id/TV_PTC"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+<TextView
+    android:id="@+id/TV_MV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="40dp"
+    app:layout_constraintStart_toEndOf="@id/TV_ML"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="40dp"
+    />
+<ImageButton
+    android:id="@+id/BT_1PTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    app:layout_constraintStart_toEndOf="@id/TV_MV"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+<ImageButton
+    android:id="@+id/BT_2PTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    app:layout_constraintStart_toEndOf="@id/BT_1PTV"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+<ImageButton
+    android:id="@+id/BT_3PTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    app:layout_constraintStart_toEndOf="@id/BT_2PTV"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+<Button
+    android:id="@+id/fin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Finalizar Partido"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+<!--CUADRO DE TEXTO-->
+<TextView
+    android:id="@+id/TV_JG"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Jugador/a"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="30dp"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_PT"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:text="Puntos"
+    android:textSize="25dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@id/TV_JG"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintEnd_toStartOf="@id/TV_TL"
+    app:layout_constraintVertical_bias="0.02" />
+<TextView
+    android:id="@+id/TV_TL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="T.Libres"
+    android:textSize="25dp"
+    app:layout_constraintStart_toEndOf="@id/TV_PT"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/TV_FP"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_FP"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Faltas"
+    android:textSize="25dp"
+    app:layout_constraintStart_toEndOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/TV_AS"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_FPS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="N - T"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@id/TV_FP"
+    app:layout_constraintEnd_toEndOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/TV_FP"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_AS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Asistencia"
+    android:textSize="25dp"
+    app:layout_constraintStart_toEndOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/TV_RB"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_RB"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Rebotes"
+    android:textSize="25dp"
+    app:layout_constraintStart_toEndOf="@id/TV_AS"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/TV_PTC"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_RBS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Atq - Def"
+    android:textSize="25dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@id/TV_RB"
+    app:layout_constraintEnd_toEndOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/TV_RB"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_PTC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:text="Contraataque"
+    android:textSize="25dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintEnd_toStartOf="@id/TV_ROB"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_ROB"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Robos"
+    android:textSize="25dp"
+    app:layout_constraintStart_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/TV_PE"
+    app:layout_constraintVertical_bias="0.02"
+    />
+<TextView
+    android:id="@+id/TV_PE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Perdidas"
+    android:textSize="25dp"
+    app:layout_constraintStart_toEndOf="@id/TV_ROB"
+    app:layout_constraintTop_toBottomOf="@id/TV_ML"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintVertical_bias="0.02"
+    />
+
+<!--JUGADOR 1-->
+<!--NOMBRE-->
+<TextView
+    android:id="@+id/JG1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@id/TV_JG"
+    app:layout_constraintEnd_toEndOf="@id/TV_JG"
+    app:layout_constraintTop_toTopOf="@id/PT1"
+    />
+
+<!--PUNTOS-->
+<TextView
+    android:id="@+id/PT1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PT"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_PT12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPuntos1_2"
+    app:layout_constraintStart_toStartOf="@id/TV_PT"
+    app:layout_constraintEnd_toStartOf="@id/BT_PT13"
+    app:layout_constraintTop_toBottomOf="@id/PT1"
+    />
+<ImageButton
+    android:id="@+id/BT_PT13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPuntos1_3"
+    app:layout_constraintTop_toBottomOf="@id/PT1"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintStart_toEndOf="@id/BT_PT12"
+    />
+<!--TIROS LIBRES-->
+<TextView
+    android:id="@+id/TLA1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<TextView
+    android:id="@+id/TLT1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_TLA1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnTLA1"
+    app:layout_constraintEnd_toStartOf="@+id/BT_TLT1"
+    app:layout_constraintStart_toStartOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLA1" />
+<ImageButton
+    android:id="@+id/BT_TLT1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/cero"
+    android:onClick="btnTLT1"
+    app:layout_constraintStart_toEndOf="@id/BT_TLA1"
+    app:layout_constraintEnd_toEndOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLT1"
+
+    />
+<!--FALTAS-->
+<TextView
+    android:id="@+id/FPN1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<TextView
+    android:id="@+id/FPT1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_FPN1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPN1"
+    app:layout_constraintEnd_toStartOf="@+id/BT_FPT1"
+    app:layout_constraintStart_toStartOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPN1" />
+<ImageButton
+    android:id="@+id/BT_FPT1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPT1"
+    app:layout_constraintStart_toEndOf="@id/BT_FPN1"
+    app:layout_constraintEnd_toEndOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPT1"
+
+    />
+<!--ASISTENCIAS-->
+<TextView
+    android:id="@+id/AS1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_AS"
+    app:layout_constraintEnd_toEndOf="@id/TV_AS"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_AS1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnAS1"
+    app:layout_constraintStart_toStartOf="@id/AS1"
+    app:layout_constraintEnd_toEndOf="@id/AS1"
+    app:layout_constraintTop_toBottomOf="@id/AS1" />
+<!--REBOTES-->
+<TextView
+    android:id="@+id/RBA1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<TextView
+    android:id="@+id/RBD1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_RBA1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBA1"
+    app:layout_constraintEnd_toStartOf="@+id/BT_RBD1"
+    app:layout_constraintStart_toStartOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBA1" />
+<ImageButton
+    android:id="@+id/BT_RBD1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBD1"
+    app:layout_constraintStart_toEndOf="@id/BT_RBA1"
+    app:layout_constraintEnd_toEndOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBD1"
+
+    />
+<!--CONTRAATAQUE-->
+<TextView
+    android:id="@+id/PTC1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PTC"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_PTC12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPTC12"
+    app:layout_constraintStart_toStartOf="@id/TV_PTC"
+    app:layout_constraintEnd_toStartOf="@id/BT_PTC13"
+    app:layout_constraintTop_toBottomOf="@id/PTC1" />
+<ImageButton
+    android:id="@+id/BT_PTC13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPTC13"
+    app:layout_constraintStart_toEndOf="@id/BT_PTC12"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/PTC1" />
+<!--ROBOS-->
+<TextView
+    android:id="@+id/ROB1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_ROB"
+    app:layout_constraintEnd_toEndOf="@id/TV_ROB"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_ROB1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnROB1"
+    app:layout_constraintStart_toStartOf="@id/ROB1"
+    app:layout_constraintEnd_toEndOf="@id/ROB1"
+    app:layout_constraintTop_toBottomOf="@id/ROB1" />
+<!--PERDIDAS-->
+<TextView
+    android:id="@+id/PE1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PE"
+    app:layout_constraintEnd_toEndOf="@id/TV_PE"
+    app:layout_constraintTop_toBottomOf="@id/TV_FPS"
+    />
+<ImageButton
+    android:id="@+id/BT_PE1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnPE1"
+    app:layout_constraintStart_toStartOf="@id/PE1"
+    app:layout_constraintEnd_toEndOf="@id/PE1"
+    app:layout_constraintTop_toBottomOf="@id/PE1" />
+
+<!--JUGADOR 2-->
+<!--NOMBRE-->
+<TextView
+    android:id="@+id/JG2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@id/TV_JG"
+    app:layout_constraintEnd_toEndOf="@id/TV_JG"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT12"
+    android:layout_marginTop="15dp"
+    />
+
+<!--PUNTOS-->
+<TextView
+    android:id="@+id/PT2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PT"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT12"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PT22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPuntos2_2"
+    app:layout_constraintStart_toStartOf="@id/TV_PT"
+    app:layout_constraintEnd_toStartOf="@id/BT_PT23"
+    app:layout_constraintTop_toBottomOf="@id/PT2"
+    />
+<ImageButton
+    android:id="@+id/BT_PT23"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPuntos2_3"
+    app:layout_constraintTop_toBottomOf="@id/PT2"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintStart_toEndOf="@id/BT_PT22"
+    />
+<!--TIROS LIBRES-->
+<TextView
+    android:id="@+id/TLA2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLA1"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/TLT2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLT1"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_TLA2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnTLA2"
+    app:layout_constraintEnd_toStartOf="@+id/BT_TLT2"
+    app:layout_constraintStart_toStartOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLA2"
+    />
+<ImageButton
+    android:id="@+id/BT_TLT2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/cero"
+    android:onClick="btnTLT2"
+    app:layout_constraintStart_toEndOf="@id/BT_TLA2"
+    app:layout_constraintEnd_toEndOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLT2"
+
+    />
+<!--FALTAS-->
+<TextView
+    android:id="@+id/FPN2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPN1"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/FPT2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPT1"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_FPN2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPN2"
+    app:layout_constraintEnd_toStartOf="@+id/BT_FPT2"
+    app:layout_constraintStart_toStartOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPN2"
+    />
+<ImageButton
+    android:id="@+id/BT_FPT2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPT2"
+    app:layout_constraintStart_toEndOf="@id/BT_FPN2"
+    app:layout_constraintEnd_toEndOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPT2"
+    />
+<!--ASISTENCIAS-->
+<TextView
+    android:id="@+id/AS2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_AS"
+    app:layout_constraintEnd_toEndOf="@id/TV_AS"
+    app:layout_constraintTop_toBottomOf="@id/BT_AS1"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_AS2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnAS2"
+    app:layout_constraintStart_toStartOf="@id/AS2"
+    app:layout_constraintEnd_toEndOf="@id/AS2"
+    app:layout_constraintTop_toBottomOf="@id/AS2"
+    />
+<!--REBOTES-->
+<TextView
+    android:id="@+id/RBA2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBA1"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/RBD2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBD1"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_RBA2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBA2"
+    app:layout_constraintEnd_toStartOf="@+id/BT_RBD2"
+    app:layout_constraintStart_toStartOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBA2"
+    />
+<ImageButton
+    android:id="@+id/BT_RBD2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBD2"
+    app:layout_constraintStart_toEndOf="@id/BT_RBA2"
+    app:layout_constraintEnd_toEndOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBD2"
+    />
+<!--CONTRAATAQUE-->
+<TextView
+    android:id="@+id/PTC2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PTC"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/BT_PTC12"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PTC22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPTC22"
+    app:layout_constraintStart_toStartOf="@id/TV_PTC"
+    app:layout_constraintEnd_toStartOf="@id/BT_PTC23"
+    app:layout_constraintTop_toBottomOf="@id/PTC2" />
+<ImageButton
+    android:id="@+id/BT_PTC23"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPTC23"
+    app:layout_constraintStart_toEndOf="@id/BT_PTC22"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/PTC2" />
+<!--ROBOS-->
+<TextView
+    android:id="@+id/ROB2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_ROB"
+    app:layout_constraintEnd_toEndOf="@id/TV_ROB"
+    app:layout_constraintTop_toBottomOf="@id/BT_ROB1"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_ROB2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnROB2"
+    app:layout_constraintStart_toStartOf="@id/ROB2"
+    app:layout_constraintEnd_toEndOf="@id/ROB2"
+    app:layout_constraintTop_toBottomOf="@id/ROB2"
+    />
+<!--PERDIDAS-->
+<TextView
+    android:id="@+id/PE2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PE"
+    app:layout_constraintEnd_toEndOf="@id/TV_PE"
+    app:layout_constraintTop_toBottomOf="@id/BT_PE1"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PE2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnPE2"
+    app:layout_constraintStart_toStartOf="@id/PE2"
+    app:layout_constraintEnd_toEndOf="@id/PE2"
+    app:layout_constraintTop_toBottomOf="@id/PE2"
+    />
+
+<!--JUGADOR 3-->
+<!--NOMBRE-->
+<TextView
+    android:id="@+id/JG3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@id/TV_JG"
+    app:layout_constraintEnd_toEndOf="@id/TV_JG"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT22"
+
+    />
+
+<!--PUNTOS-->
+<TextView
+    android:id="@+id/PT3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PT"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT22"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PT32"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPuntos3_2"
+    app:layout_constraintStart_toStartOf="@id/TV_PT"
+    app:layout_constraintEnd_toStartOf="@id/BT_PT33"
+    app:layout_constraintTop_toBottomOf="@id/PT3"
+    />
+<ImageButton
+    android:id="@+id/BT_PT33"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPuntos3_3"
+    app:layout_constraintTop_toBottomOf="@id/PT3"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintStart_toEndOf="@id/BT_PT32"
+    />
+<!--TIROS LIBRES-->
+<TextView
+    android:id="@+id/TLA3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLA2"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/TLT3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLT2"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_TLA3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnTLA3"
+    app:layout_constraintEnd_toStartOf="@+id/BT_TLT3"
+    app:layout_constraintStart_toStartOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLA3"
+    />
+<ImageButton
+    android:id="@+id/BT_TLT3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/cero"
+    android:onClick="btnTLT3"
+    app:layout_constraintStart_toEndOf="@id/BT_TLA3"
+    app:layout_constraintEnd_toEndOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLT3"
+
+    />
+<!--FALTAS-->
+<TextView
+    android:id="@+id/FPN3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPN2"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/FPT3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPT2"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_FPN3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPN3"
+    app:layout_constraintEnd_toStartOf="@+id/BT_FPT3"
+    app:layout_constraintStart_toStartOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPN3"
+    />
+<ImageButton
+    android:id="@+id/BT_FPT3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPT3"
+    app:layout_constraintStart_toEndOf="@id/BT_FPN3"
+    app:layout_constraintEnd_toEndOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPT3"
+    />
+<!--ASISTENCIAS-->
+<TextView
+    android:id="@+id/AS3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_AS"
+    app:layout_constraintEnd_toEndOf="@id/TV_AS"
+    app:layout_constraintTop_toBottomOf="@id/BT_AS2"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_AS3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnAS3"
+    app:layout_constraintStart_toStartOf="@id/AS3"
+    app:layout_constraintEnd_toEndOf="@id/AS3"
+    app:layout_constraintTop_toBottomOf="@id/AS3"
+    />
+<!--REBOTES-->
+<TextView
+    android:id="@+id/RBA3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBA2"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/RBD3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBD2"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_RBA3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBA3"
+    app:layout_constraintEnd_toStartOf="@+id/BT_RBD3"
+    app:layout_constraintStart_toStartOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBA3"
+    />
+<ImageButton
+    android:id="@+id/BT_RBD3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBD3"
+    app:layout_constraintStart_toEndOf="@id/BT_RBA3"
+    app:layout_constraintEnd_toEndOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBD3"
+    />
+<!--CONTRAATAQUE-->
+<TextView
+    android:id="@+id/PTC3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PTC"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/BT_PTC22"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PTC32"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPTC32"
+    app:layout_constraintStart_toStartOf="@id/TV_PTC"
+    app:layout_constraintEnd_toStartOf="@id/BT_PTC33"
+    app:layout_constraintTop_toBottomOf="@id/PTC3" />
+<ImageButton
+    android:id="@+id/BT_PTC33"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPTC33"
+    app:layout_constraintStart_toEndOf="@id/BT_PTC32"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/PTC3" />
+<!--ROBOS-->
+<TextView
+    android:id="@+id/ROB3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_ROB"
+    app:layout_constraintEnd_toEndOf="@id/TV_ROB"
+    app:layout_constraintTop_toBottomOf="@id/BT_ROB2"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_ROB3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnROB3"
+    app:layout_constraintStart_toStartOf="@id/ROB3"
+    app:layout_constraintEnd_toEndOf="@id/ROB3"
+    app:layout_constraintTop_toBottomOf="@id/ROB3"
+    />
+<!--PERDIDAS-->
+<TextView
+    android:id="@+id/PE3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PE"
+    app:layout_constraintEnd_toEndOf="@id/TV_PE"
+    app:layout_constraintTop_toBottomOf="@id/BT_PE2"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PE3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnPE3"
+    app:layout_constraintStart_toStartOf="@id/PE3"
+    app:layout_constraintEnd_toEndOf="@id/PE3"
+    app:layout_constraintTop_toBottomOf="@id/PE3"
+    />
+
+<!--JUGADOR 4-->
+<!--NOMBRE-->
+<TextView
+    android:id="@+id/JG4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@id/TV_JG"
+    app:layout_constraintEnd_toEndOf="@id/TV_JG"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT32"
+
+    />
+<!--PUNTOS-->
+<TextView
+    android:id="@+id/PT4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PT"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT32"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PT42"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPuntos4_2"
+    app:layout_constraintStart_toStartOf="@id/TV_PT"
+    app:layout_constraintEnd_toStartOf="@id/BT_PT43"
+    app:layout_constraintTop_toBottomOf="@id/PT4"
+    />
+<ImageButton
+    android:id="@+id/BT_PT43"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPuntos4_3"
+    app:layout_constraintTop_toBottomOf="@id/PT4"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintStart_toEndOf="@id/BT_PT42"
+    />
+<!--TIROS LIBRES-->
+<TextView
+    android:id="@+id/TLA4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLA3"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/TLT4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLT3"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_TLA4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnTLA4"
+    app:layout_constraintEnd_toStartOf="@+id/BT_TLT4"
+    app:layout_constraintStart_toStartOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLA4"
+    />
+<ImageButton
+    android:id="@+id/BT_TLT4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/cero"
+    android:onClick="btnTLT4"
+    app:layout_constraintStart_toEndOf="@id/BT_TLA4"
+    app:layout_constraintEnd_toEndOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLT4"
+
+    />
+<!--FALTAS-->
+<TextView
+    android:id="@+id/FPN4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPN3"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/FPT4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPT3"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_FPN4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPN4"
+    app:layout_constraintEnd_toStartOf="@+id/BT_FPT4"
+    app:layout_constraintStart_toStartOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPN4"
+    />
+<ImageButton
+    android:id="@+id/BT_FPT4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPT4"
+    app:layout_constraintStart_toEndOf="@id/BT_FPN4"
+    app:layout_constraintEnd_toEndOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPT4"
+    />
+<!--ASISTENCIAS-->
+<TextView
+    android:id="@+id/AS4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_AS"
+    app:layout_constraintEnd_toEndOf="@id/TV_AS"
+    app:layout_constraintTop_toBottomOf="@id/BT_AS3"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_AS4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnAS4"
+    app:layout_constraintStart_toStartOf="@id/AS4"
+    app:layout_constraintEnd_toEndOf="@id/AS4"
+    app:layout_constraintTop_toBottomOf="@id/AS4"
+    />
+<!--REBOTES-->
+<TextView
+    android:id="@+id/RBA4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBA3"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/RBD4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBD3"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_RBA4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBA4"
+    app:layout_constraintEnd_toStartOf="@+id/BT_RBD4"
+    app:layout_constraintStart_toStartOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBA4"
+    />
+<ImageButton
+    android:id="@+id/BT_RBD4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBD4"
+    app:layout_constraintStart_toEndOf="@id/BT_RBA4"
+    app:layout_constraintEnd_toEndOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBD4"
+    />
+<!--CONTRAATAQUE-->
+<TextView
+    android:id="@+id/PTC4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PTC"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/BT_PTC32"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PTC42"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPTC42"
+    app:layout_constraintStart_toStartOf="@id/TV_PTC"
+    app:layout_constraintEnd_toStartOf="@id/BT_PTC43"
+    app:layout_constraintTop_toBottomOf="@id/PTC4" />
+<ImageButton
+    android:id="@+id/BT_PTC43"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPTC43"
+    app:layout_constraintStart_toEndOf="@id/BT_PTC42"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/PTC4" />
+<!--ROBOS-->
+<TextView
+    android:id="@+id/ROB4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_ROB"
+    app:layout_constraintEnd_toEndOf="@id/TV_ROB"
+    app:layout_constraintTop_toBottomOf="@id/BT_ROB3"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_ROB4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnROB4"
+    app:layout_constraintStart_toStartOf="@id/ROB4"
+    app:layout_constraintEnd_toEndOf="@id/ROB4"
+    app:layout_constraintTop_toBottomOf="@id/ROB4"
+    />
+<!--PERDIDAS-->
+<TextView
+    android:id="@+id/PE4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PE"
+    app:layout_constraintEnd_toEndOf="@id/TV_PE"
+    app:layout_constraintTop_toBottomOf="@id/BT_PE3"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PE4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnPE4"
+    app:layout_constraintStart_toStartOf="@id/PE4"
+    app:layout_constraintEnd_toEndOf="@id/PE4"
+    app:layout_constraintTop_toBottomOf="@id/PE4"
+    />
+
+<!--JUGADOR 5-->
+<!--NOMBRE-->
+<TextView
+    android:id="@+id/JG5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@id/TV_JG"
+    app:layout_constraintEnd_toEndOf="@id/TV_JG"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT42"
+
+    />
+<!--PUNTOS-->
+<TextView
+    android:id="@+id/PT5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PT"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintTop_toBottomOf="@id/BT_PT42"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PT52"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPuntos5_2"
+    app:layout_constraintStart_toStartOf="@id/TV_PT"
+    app:layout_constraintEnd_toStartOf="@id/BT_PT53"
+    app:layout_constraintTop_toBottomOf="@id/PT5"
+    />
+<ImageButton
+    android:id="@+id/BT_PT53"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPuntos5_3"
+    app:layout_constraintTop_toBottomOf="@id/PT5"
+    app:layout_constraintEnd_toEndOf="@id/TV_PT"
+    app:layout_constraintStart_toEndOf="@id/BT_PT52"
+    />
+<!--TIROS LIBRES-->
+<TextView
+    android:id="@+id/TLA5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLA4"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/TLT5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/BT_TLT4"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_TLA5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnTLA5"
+    app:layout_constraintEnd_toStartOf="@+id/BT_TLT5"
+    app:layout_constraintStart_toStartOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLA5"
+    />
+<ImageButton
+    android:id="@+id/BT_TLT5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/cero"
+    android:onClick="btnTLT5"
+    app:layout_constraintStart_toEndOf="@id/BT_TLA5"
+    app:layout_constraintEnd_toEndOf="@id/TV_TL"
+    app:layout_constraintTop_toBottomOf="@id/TLT5"
+
+    />
+<!--FALTAS-->
+<TextView
+    android:id="@+id/FPN5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPN4"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/FPT5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/BT_FPT4"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_FPN5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPN5"
+    app:layout_constraintEnd_toStartOf="@+id/BT_FPT5"
+    app:layout_constraintStart_toStartOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPN5"
+    />
+<ImageButton
+    android:id="@+id/BT_FPT5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnFPT5"
+    app:layout_constraintStart_toEndOf="@id/BT_FPN5"
+    app:layout_constraintEnd_toEndOf="@id/TV_FP"
+    app:layout_constraintTop_toBottomOf="@id/FPT5"
+    />
+<!--ASISTENCIAS-->
+<TextView
+    android:id="@+id/AS5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_AS"
+    app:layout_constraintEnd_toEndOf="@id/TV_AS"
+    app:layout_constraintTop_toBottomOf="@id/BT_AS4"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_AS5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnAS5"
+    app:layout_constraintStart_toStartOf="@id/AS5"
+    app:layout_constraintEnd_toEndOf="@id/AS5"
+    app:layout_constraintTop_toBottomOf="@id/AS5"
+    />
+<!--REBOTES-->
+<TextView
+    android:id="@+id/RBA5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBA4"
+    android:layout_marginTop="15dp"
+    />
+<TextView
+    android:id="@+id/RBD5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toEndOf="@+id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/BT_RBD4"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_RBA5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBA5"
+    app:layout_constraintEnd_toStartOf="@+id/BT_RBD5"
+    app:layout_constraintStart_toStartOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBA5"
+    />
+<ImageButton
+    android:id="@+id/BT_RBD5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnRBD5"
+    app:layout_constraintStart_toEndOf="@id/BT_RBA5"
+    app:layout_constraintEnd_toEndOf="@id/TV_RB"
+    app:layout_constraintTop_toBottomOf="@id/RBD5"
+    />
+<!--CONTRAATAQUE-->
+<TextView
+    android:id="@+id/PTC5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PTC"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/BT_PTC42"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PTC52"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/dos"
+    android:onClick="btnPTC52"
+    app:layout_constraintStart_toStartOf="@id/TV_PTC"
+    app:layout_constraintEnd_toStartOf="@id/BT_PTC53"
+    app:layout_constraintTop_toBottomOf="@id/PTC5" />
+<ImageButton
+    android:id="@+id/BT_PTC53"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tres"
+    android:onClick="btnPTC53"
+    app:layout_constraintStart_toEndOf="@id/BT_PTC52"
+    app:layout_constraintEnd_toEndOf="@id/TV_PTC"
+    app:layout_constraintTop_toBottomOf="@id/PTC5" />
+<!--ROBOS-->
+<TextView
+    android:id="@+id/ROB5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_ROB"
+    app:layout_constraintEnd_toEndOf="@id/TV_ROB"
+    app:layout_constraintTop_toBottomOf="@id/BT_ROB4"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_ROB5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnROB5"
+    app:layout_constraintStart_toStartOf="@id/ROB5"
+    app:layout_constraintEnd_toEndOf="@id/ROB5"
+    app:layout_constraintTop_toBottomOf="@id/ROB5"
+    />
+<!--PERDIDAS-->
+<TextView
+    android:id="@+id/PE5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="@+id/TV_PE"
+    app:layout_constraintEnd_toEndOf="@id/TV_PE"
+    app:layout_constraintTop_toBottomOf="@id/BT_PE4"
+    android:layout_marginTop="15dp"
+    />
+<ImageButton
+    android:id="@+id/BT_PE5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/uno"
+    android:onClick="btnPE5"
+    app:layout_constraintStart_toStartOf="@id/PE5"
+    app:layout_constraintEnd_toEndOf="@id/PE5"
+    app:layout_constraintTop_toBottomOf="@id/PE5"
+    />
+
+<Button
+    android:id="@+id/BT_BANQUILLO"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Banquillo"
+    android:textSize="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

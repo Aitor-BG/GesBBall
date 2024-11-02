@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1095975957287",
+    "firebase_url": "https://fir-tfg-41d8f-default-rtdb.firebaseio.com",
+    "project_id": "fir-tfg-41d8f",
+    "storage_bucket": "fir-tfg-41d8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095975957287:android:7c89fc5d6fd5fe343a6f02",
+        "android_client_info": {
+          "package_name": "com.abg.gesbball_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcCMjTAUu-8WxeNXXSXmsC61zq2Q9LA-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

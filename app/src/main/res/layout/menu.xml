@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Videoteca"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/BT_VIDEO"
+        app:layout_constraintEnd_toEndOf="@id/BT_VIDEO"
+        app:layout_constraintBottom_toTopOf="@id/BT_VIDEO"
+        />
+
+    <ImageButton
+        android:id="@+id/BT_VIDEO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/video"
+        android:onClick="btnVideoteca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="320dp"
+        android:layout_marginBottom="320dp"
+        />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Partido"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/BT_PARTIDO"
+        app:layout_constraintEnd_toEndOf="@id/BT_PARTIDO"
+        app:layout_constraintBottom_toTopOf="@id/BT_PARTIDO"
+        />
+
+    <ImageButton
+        android:id="@+id/BT_PARTIDO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/partido"
+        android:onClick="btnPartido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="320dp"
+        />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Equipo"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/BT_EQUIPO"
+        app:layout_constraintEnd_toEndOf="@id/BT_EQUIPO"
+        app:layout_constraintBottom_toTopOf="@id/BT_EQUIPO"
+        />
+
+    <ImageButton
+        android:id="@+id/BT_EQUIPO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/equipo"
+        android:onClick="btnEquipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="320dp"
+        />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Jugador"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/BT_JUGADOR"
+        app:layout_constraintEnd_toEndOf="@id/BT_JUGADOR"
+        app:layout_constraintBottom_toTopOf="@id/BT_JUGADOR"
+        />
+
+    <ImageButton
+        android:id="@+id/BT_JUGADOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jugador"
+        android:onClick="btnJugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="320dp"
+        android:layout_marginTop="320dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

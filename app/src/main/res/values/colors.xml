@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="parqueP">#82328C</color>
+    <color name="parqueB">#043F8C</color>
+    <color name="parqueY">#F2E641</color>
+    <color name="parqueY2">#F2D544</color>
+    <color name="parqueG">#736C70</color>
+</resources>

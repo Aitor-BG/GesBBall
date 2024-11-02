@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/BT_VOLVER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/volver"
+        android:onClick="btnVolver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        />
+
+    <Button
+        android:id="@+id/BT_VIDEO1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Ataque 2-3"
+        android:onClick="btnVideo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/BT_VIDEO2"
+        app:layout_constraintBottom_toTopOf="@id/VIDEO"
+        />
+
+    <Button
+        android:id="@+id/BT_VIDEO2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Ataque 3-2"
+        android:onClick="btnVideo2"
+        app:layout_constraintStart_toEndOf="@id/BT_VIDEO1"
+        app:layout_constraintEnd_toStartOf="@id/BT_VIDEO3"
+        app:layout_constraintBottom_toTopOf="@id/VIDEO"
+        android:layout_marginStart="10dp"
+        />
+
+    <Button
+        android:id="@+id/BT_VIDEO3"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Diamante"
+        android:onClick="btnVideo3"
+        app:layout_constraintStart_toEndOf="@id/BT_VIDEO2"
+        app:layout_constraintEnd_toStartOf="@id/BT_VIDEO4"
+        app:layout_constraintBottom_toTopOf="@id/VIDEO"
+        android:layout_marginStart="10dp"
+        />
+
+    <Button
+        android:id="@+id/BT_VIDEO4"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Cuernos"
+        android:onClick="btnVideo4"
+        app:layout_constraintStart_toEndOf="@id/BT_VIDEO3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/VIDEO"
+        android:layout_marginStart="10dp"
+        />
+
+    <VideoView
+        android:id="@+id/VIDEO"
+        android:layout_width="1085dp"
+        android:layout_height="600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
